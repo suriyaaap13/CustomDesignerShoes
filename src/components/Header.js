@@ -12,11 +12,11 @@ export default function Header() {
               <img src={require("../logo.png")} class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"/>
           </Link>
           <ul class="nav col-12 col-md-auto mb-2 fs-5 justify-content-center mb-md-0">
-            <li><Link to="/" class="nav-link px-2 link-dark">HOME</Link></li>
-            <li><Link to="/journey" class="nav-link px-2 link-dark">THE JOURNEY</Link></li>
-            <li><Link to="/team" class="nav-link px-2 link-dark">TEAM</Link></li>
-            <li><Link to="/store" class="nav-link px-2 link-dark">STORE</Link></li>
-            <li><Link to="/contact" class="nav-link px-2 link-dark">CONTACT</Link></li>
+            <li><Link exact to="/" class="nav-link px-2 link-dark">HOME</Link></li>
+            <li><Link exact to="/journey" class="nav-link px-2 link-dark">THE JOURNEY</Link></li>
+            <li><Link exact to="/team" class="nav-link px-2 link-dark">TEAM</Link></li>
+            <li><Link exact to="/store" class="nav-link px-2 link-dark">STORE</Link></li>
+            <li><Link exact to="/contact" class="nav-link px-2 link-dark">CONTACT</Link></li>
           </ul>
           <div class="col-md-3 text-end mx-5">
             <i class="fa-solid fa-user fa-2x"></i>

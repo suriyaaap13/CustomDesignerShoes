@@ -51,7 +51,7 @@ export default function Store() {
                 Color
               </div>
               {/* colors */}
-              <div className='d-flex justify-content-between py-3 w-50'>
+              <div className='d-flex justify-content-around py-3'>
                 {/* Individual color */}
                 <div className='' style={{width: "1.5rem", height: "1.5rem", backgroundColor: "red"}}></div>
                 <div className='' style={{width: "1.5rem", height: "1.5rem", backgroundColor: "cyan"}}></div>
@@ -125,7 +125,7 @@ export default function Store() {
                 </div>
               </div>
               {/* card Container */}
-              <div className='py-4 w-100 d-flex justify-content-between'>
+              <div className='py-4 w-100 d-flex justify-content-around'>
                 {/* Card */}
                 <div className="card" style={{width: "14rem"}}>
                   {/* Card Image */}
@@ -174,13 +174,7 @@ export default function Store() {
                     </div>
                   </div>
                 </div>
-                
               </div>
-              
-              
-              
-              {/* Card title */}
-              {/* Card price and ratings */}
             </div>
         </div>
         {/* Section 3 */}
@@ -199,7 +193,7 @@ export default function Store() {
             {/* Inside cart */}
             <div className='w-100 py-5 my-5'>
               <div className='d-flex align-items-center justify-content-center my-5 py-5'>
-                What's stopping you, designer?
+                What's stopping you?
               </div>
             </div>
             {/* Footer of Cart */}
@@ -212,9 +206,6 @@ export default function Store() {
           </div>
         </div>
       </div>
-      
-      
-      
     </>
   )
 }

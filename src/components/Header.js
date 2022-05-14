@@ -7,19 +7,19 @@ export default function Header() {
   return (
     <>
       <div>
-        <header class="bg-light d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom" >
-          <Link to="/" class="mx-5 d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
-              <img src={require("../logo.png")} class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"/>
+        <header className="bg-light d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom" >
+          <Link to="/" className="mx-5 d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
+              <img src={require("../logo.png")} className="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"/>
           </Link>
-          <ul class="nav col-12 col-md-auto mb-2 fs-5 justify-content-center mb-md-0">
-            <li><Link exact to="/" class="nav-link px-2 link-dark">HOME</Link></li>
-            <li><Link exact to="/journey" class="nav-link px-2 link-dark">THE JOURNEY</Link></li>
-            <li><Link exact to="/team" class="nav-link px-2 link-dark">TEAM</Link></li>
-            <li><Link exact to="/store" class="nav-link px-2 link-dark">STORE</Link></li>
-            <li><Link exact to="/contact" class="nav-link px-2 link-dark">CONTACT</Link></li>
+          <ul className="nav col-12 col-md-auto mb-2 fs-5 justify-content-center mb-md-0">
+            <li><Link exact to="/" className="nav-link px-2 link-dark">HOME</Link></li>
+            <li><Link exact to="/journey" className="nav-link px-2 link-dark">THE JOURNEY</Link></li>
+            <li><Link exact to="/team" className="nav-link px-2 link-dark">TEAM</Link></li>
+            <li><Link exact to="/store" className="nav-link px-2 link-dark">STORE</Link></li>
+            <li><Link exact to="/contact" className="nav-link px-2 link-dark">CONTACT</Link></li>
           </ul>
-          <div class="col-md-3 text-end mx-5">
-            <i class="fa-solid fa-user fa-2x"></i>
+          <div className="col-md-3 text-end mx-5">
+            <i className="fa-solid fa-user fa-2x"></i>
           </div>
         </header>
       </div>

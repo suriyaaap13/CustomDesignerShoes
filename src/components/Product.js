@@ -14,13 +14,13 @@ export default function Product(props) {
                 </div>
                 {/* Shop Logo */}
                 <div className='text-dark'>
-                <i className="fa-solid fa-shop fa-2x"></i>
+                    <i className="fa-solid fa-shop fa-2x"></i>
                 </div>
-                </div>
-                {/* card Container */}
-                <div className='py-4 w-100 d-flex justify-content-around'>
+            </div>
+            {/* card Container */}
+            <div className='py-4 w-100 d-flex justify-content-around'>
                 {/* Card */}
-                <div className="card" onClick = {props.tab} style={{width: "14rem"}}>
+                <div className="card" onClick = {props.tab} style={{width: "14rem", cursor: "pointer"}}>
                     {/* Card Image */}
                     <img className="card-img-top" src={require('../shoe2.png')} alt="Card image cap"/>
                     <div className="card-body">
@@ -36,7 +36,7 @@ export default function Product(props) {
                     </div>
                 </div>
                 {/* Card */}
-                <div className="card" onClick = {props.tab} style={{width: "14rem"}}>
+                <div className="card" onClick = {props.tab} style={{width: "14rem", cursor: "pointer"}}>
                     {/* Card Image */}
                     <img className="card-img-top" src={require('../shoe2.png')} alt="Card image cap"/>
                     <div className="card-body">
@@ -52,7 +52,7 @@ export default function Product(props) {
                     </div>
                 </div>
                 {/* Card */}
-                <div className="card" onClick = {props.tab} style={{width: "14rem"}}>
+                <div className="card" onClick = {props.tab} style={{width: "14rem", cursor: "pointer"}}>
                     {/* Card Image */}
                     <img className="card-img-top" src={require('../shoe2.png')} alt="Card image cap"/>
                     <div className="card-body">
@@ -67,7 +67,7 @@ export default function Product(props) {
                     </div>
                     </div>
                 </div>
-                </div>
+            </div>
             </div>
         </div> 
     </>

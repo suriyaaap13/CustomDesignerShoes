@@ -11,7 +11,7 @@ export default function Contact() {
       <div className='' >
         {/* Contact Card */}
         <div className='d-flex align-items-center justify-content-center container pt-4' >
-          <div className='col-4  bg-warning p-5 shadow p-5 mb-5 bg-white rounded'>
+          <div className='col-4  bg-warning p-5 shadow p-5 mb-3 bg-white rounded'>
               <div className='d-flex justify-content-center fs-5 '>REACH US AT</div>
               <div className='contact-info px-3 py-2'>
                 <div className='contact-info-details px-3 py-2'>

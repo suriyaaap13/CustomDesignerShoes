@@ -21,8 +21,12 @@ export default function CartItem(props) {
             <div className='fw-bold'>
               KSL 01
             </div>
+            {/* Size */}
+            <small>
+              Size: {props.size}
+            </small>
             {/* Product Cost */}
-            <small>Rs. 2000/-</small>
+            <small className='d-block'>Rs. 2000/-</small>
             {/* Delete Product */}
             <div className='text-danger d-flex justify-content-end p-2' onClick={handleClick}>
               <i className="fa-solid fa-trash-can border p-2 shadow bg-white rounded"></i>

@@ -1,12 +1,13 @@
 import React, {useState} from 'react'
 import Color from './Color';
 import ProductImage from './ProductImage';
-
+import Size from './Size';
 
 export default function Design(props) {
   const [FB, setFB] = useState(true);
   const [back, setBack] = useState(true);
   const [sole, setSole] = useState(true);
+  const [size, setSize] = useState("7");
 
   function handleClickFB(){
     setFB(!FB);
@@ -20,12 +21,18 @@ export default function Design(props) {
     setSole(!sole);
   }
 
+  function handleClickSize(value) {
+    setSize(value);
+    console.log("Hello World");
+  }
+
   function handleA2C(){
     props.onAdd({
       fb: FB,
-      back: back
+      back: back,
+      size: size
     })
-    
+
   }
 
   const customStyle ={width: "40rem", height: "40rem"}
@@ -97,17 +104,7 @@ export default function Design(props) {
                   
                 </div>
                 {/* Size */}
-                <div className='py-2'>
-                  <div className='col-5 fs-5 py-2'>
-                    Size
-                  </div>
-                  <div className='col-7 py-2 d-flex justify-content-between'>
-                    <div className='border border-dark d-flex justify-content-center align-items-center fw-bold' style={{width: "2rem", height: "2rem", backgroundColor: "white"}}>7</div>
-                    <div className='border border-dark d-flex justify-content-center align-items-center fw-bold' style={{width: "2rem", height: "2rem", backgroundColor: "white"}}>8</div>
-                    <div className='border border-dark d-flex justify-content-center align-items-center fw-bold' style={{width: "2rem", height: "2rem", backgroundColor: "white"}}>9</div>
-                    <div className='border border-dark d-flex justify-content-center align-items-center fw-bold' style={{width: "2rem", height: "2rem", backgroundColor: "white"}}>10</div>
-                  </div>
-                </div>
+                <Size shoeSize={size} editSize={handleClickSize} />
                 {/* Add to cart Button */}
                 <div className='d-flex justify-content-center align-items-center py-5'>
                   <div className='btn btn-lg btn-outline-primary' onClick={handleA2C}>

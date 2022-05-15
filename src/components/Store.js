@@ -8,7 +8,6 @@ export default function Store() {
   const [ tab, setTab ] = useState(true);
   const [items, setItem] = useState([]);
   function addItem(value){
-    console.log(value);
     setItem((prevValue)=>{
       return [...prevValue, value];
     });
@@ -34,7 +33,7 @@ export default function Store() {
           <div className='col-md-2 shadow p-3 mb-3 bg-white rounded px-4'>
             <div className=' '>
               {/* Cart and Cart Icon */}
-              <div className='d-flex justify-content-between align-items-enter'>
+              <div className='d-flex justify-content-between align-items-center'>
                 <div className='fs-3'>
                   Cart
                 </div>
@@ -52,10 +51,19 @@ export default function Store() {
                       key={index}
                       id={index}
                       fb={item.fb}
+                      size={item.size}
                       back={item.back}
                     />
                   )
                 })
+              }
+              {/* show order button if there is something in the cart */}
+              {(items.length!==0)&&
+                <div className='d-flex justify-content-center align-items-center'>
+                  <div className='btn btn-primary'>
+                    Checkout
+                  </div>
+                </div>
               }
               {/* If nothing is there */}
               {(items.length===0)&&

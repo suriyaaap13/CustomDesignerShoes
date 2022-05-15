@@ -19,6 +19,15 @@ export default function Design(props) {
   function handleClickSole() {
     setSole(!sole);
   }
+
+  function handleA2C(){
+    props.onAdd({
+      fb: FB,
+      back: back
+    })
+    
+  }
+
   const customStyle ={width: "40rem", height: "40rem"}
   return (
     <>
@@ -101,7 +110,7 @@ export default function Design(props) {
                 </div>
                 {/* Add to cart Button */}
                 <div className='d-flex justify-content-center align-items-center py-5'>
-                  <div className='btn btn-lg btn-outline-primary'>
+                  <div className='btn btn-lg btn-outline-primary' onClick={handleA2C}>
                     Add to Cart
                   </div>
                   

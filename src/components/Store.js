@@ -8,6 +8,7 @@ export default function Store() {
   const [ tab, setTab ] = useState(true);
   const [items, setItem] = useState([]);
   function addItem(value){
+    console.log(value);
     setItem((prevValue)=>{
       return [...prevValue, value];
     });
@@ -24,11 +25,12 @@ export default function Store() {
   }
   return (
     <>
-      <div className='row px-4 mw-100' >
+        <div className='row px-4 mw-100' >
           {/* Filter Section / Design Section */}
           {(tab===true)?<Filter/>:<Design tab={ChangeTab} onAdd={addItem} />}
           {/* Product Section */}
           {(tab===true)&&<Product tab={ChangeTab}/>}
+          {/* Cart Section */}
           <div className='col-md-2 shadow p-3 mb-3 bg-white rounded px-4'>
             <div className=' '>
               {/* Cart and Cart Icon */}
@@ -49,8 +51,8 @@ export default function Store() {
                       onChecked={deleteItem}
                       key={index}
                       id={index}
-                      title={item.title}
-                      content={item.note}
+                      fb={item.fb}
+                      back={item.back}
                     />
                   )
                 })
@@ -65,9 +67,7 @@ export default function Store() {
               }
             </div>
           </div>
-          
-          
-          </div>
+        </div>
     </>
   );
   

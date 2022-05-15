@@ -2,8 +2,8 @@ import React from 'react'
 
 export default function Home() {
   return (
-    <div p-5 m-5>
-      <h1>
+    <div class="p-5 m-5">
+      <h1 class="p-5 m-5">
         This is Home.
       </h1>
     </div>

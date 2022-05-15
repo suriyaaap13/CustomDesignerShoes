@@ -2,11 +2,11 @@ import React, {useState} from 'react'
 import Color from './Color';
 import ProductImage from './ProductImage';
 
+
 export default function Design(props) {
   const [FB, setFB] = useState(true);
   const [back, setBack] = useState(true);
   const [sole, setSole] = useState(true);
-  const [size, setSize] = useState(true);
 
   function handleClickFB(){
     setFB(!FB);
@@ -19,7 +19,7 @@ export default function Design(props) {
   function handleClickSole() {
     setSole(!sole);
   }
-
+  const customStyle ={width: "40rem", height: "40rem"}
   return (
     <>
     <div className='col-md-10'>
@@ -37,7 +37,7 @@ export default function Design(props) {
           <div className='py-4 px-4 row'>
             <div className='col-md-8'> 
               {/* Product Image */}
-              <ProductImage fb={FB} back={back} />
+              <ProductImage fb={FB} back={back} style={customStyle} />
             </div>
             <div className='col-md-4 p-2'>
               {/* Product Deatails */}
@@ -99,12 +99,19 @@ export default function Design(props) {
                     <div className='border border-dark d-flex justify-content-center align-items-center fw-bold' style={{width: "2rem", height: "2rem", backgroundColor: "white"}}>10</div>
                   </div>
                 </div>
+                {/* Add to cart Button */}
+                <div className='d-flex justify-content-center align-items-center py-5'>
+                  <div className='btn btn-lg btn-outline-primary'>
+                    Add to Cart
+                  </div>
+                  
+                </div>
               </div>
 
             </div>
           </div>
       </div>
-      {/* Add to cart Button */}
+      
     </div>
       
     </>

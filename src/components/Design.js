@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import Color from './Color';
+import ProductImage from './ProductImage';
 
 export default function Design(props) {
   const [FB, setFB] = useState(true);
@@ -36,7 +37,7 @@ export default function Design(props) {
           <div className='py-4 px-4 row'>
             <div className='col-md-8'> 
               {/* Product Image */}
-              <img src={require('../shoes/shoe1.png')} style={{width: "40rem", height: "40rem"}} alt='Product Image'/>
+              <ProductImage fb={FB} back={back} />
             </div>
             <div className='col-md-4 p-2'>
               {/* Product Deatails */}
